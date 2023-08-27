@@ -14,6 +14,7 @@ df['Carbs'] = pd.to_numeric(df['Carbs'], errors='coerce')
 df['Saturated Fat'] = pd.to_numeric(df['Saturated Fat'], errors='coerce')
 df = df.dropna(subset=['Protein', 'Saturated Fat', 'Carbs'])
 
+# Elimina las filas donde los datos sean iguales a 0
 df = df.loc[abs(df['Protein']) > 0]
 df = df.loc[abs(df['Carbs']) > 0]
 df = df.loc[abs(df['Saturated Fat']) > 0]
@@ -42,6 +43,7 @@ epoch = 500
 # Longitud del dataset
 n = len(X)
 
+# Arreglo para almacenar la evolución del mse a lo largo de las iteraciones
 mse_values = []
 
 
@@ -71,7 +73,7 @@ for i in range(epoch):
     m2 = m2 - learning_rate * Deriv_m2
     b = b - learning_rate * Deriv_b
 
-print("Ecuación Final de train:")
+print("Ecuación Final:")
 print ("y =", m1, "* x1 +", m2, "* x2 +", b)
 
 # Evaluación del modelo en los datos de entrenamiento
