@@ -94,7 +94,7 @@ MSE_test = mean_square(Y_test, m1, m2, X_test, b, len(X_test))
 print()
 print("MSE con datos de prueba:", MSE_test)
 
-# Calcular el coeficiente de determinación (R-squared) en los datos de entrenamiento
+# Calcular el coeficiente de determinación (R-squared) en los datos de prueba
 SST_test = np.sum((Y_test - np.mean(Y_test)) ** 2)
 SSE_test = np.sum((Y_test - Y_test_pred) ** 2)
 SST_test = np.sum((Y_test - np.mean(Y_test)) ** 2)
