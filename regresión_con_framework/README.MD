@@ -22,8 +22,7 @@ El dataset posee 14 columnas sobre cada platillo registrado:
 * Sodium (mg): Cantidad de sodio (unidad de medición "gramos") 
 * Carbs(g): Cantidad de carbohidratos (unidad de medición "gramos") 
 
-# Algoritmo utilizado
-Para este entregable se implementó el algoritmo de Gradient Descent con regresióm lineal.
+# Regresión utilizada
 
 Se escogió utilizar regresión lineal debido a que el objetivo del modelo es predecir el comportamiento sobre la cantidad de calorías con respecto a las Grasas Saturadas y Grasas Totales en alimentos de comida rápida. La elección de las variables se debe a que una fuente principal de calorías en alimentos suele ser la grasa. A su vez, otro factor relevante a considerar es que en el código se realiza una matriz de correlación para establecer que hay correlaciones altas ya que el modelo sin framework sobre las proteínas no es tan significativo. 
 
