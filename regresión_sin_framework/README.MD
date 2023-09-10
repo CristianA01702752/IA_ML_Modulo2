@@ -23,7 +23,7 @@ El dataset posee 14 columnas sobre cada platillo registrado:
 * Carbs(g): Cantidad de carbohidratos (unidad de medición "gramos") 
 
 # Algoritmo utilizado
-Para este entregable se implementó el algoritmo de Gradient Descent con regresióm lineal.
+Para este entregable se implementó el algoritmo de Gradient Descent con regresión lineal.
 
 Se escogió utilizar regresión lineal debido a que el objetivo del modelo es predecir el comportamiento sobre la cantidad de proteínas con respecto a las Grasas Saturadas en alimentos de comida rápida. La elección de las variables se debe a que las proteínas son encontradas con mayor frecuencia en productos de origen animal y un gran porcentaje de los menus de distintos restaurantes de comida rápida poseen platillos con dichos productos. A su vez, la grasa saturada tiene mayor frecuencia en alimentos de estas franquicias por el uso de aceites y otros elementos en su elaboración. 
 
